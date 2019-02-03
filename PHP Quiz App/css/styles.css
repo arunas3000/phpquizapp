@@ -1,0 +1,445 @@
+
+/*General*/
+
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 80px;
+    font-family: Sarabun, sans-serif;
+     height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Landing page*/
+.landing-page-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -80px;
+}
+
+.landing-page-wrapper {
+    background: url("../images/landing-bg.jpg") no-repeat center;
+    height: 90vh;
+    width: 95%;
+    margin: 5vh 2.5%;
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background-size: cover;
+    border-radius: 3px;
+    text-align: center;
+    animation: fade .8s;
+}
+
+.landing-inputs-wrapper {
+    background: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    padding: 55px 10px 55px 10px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 55%;   
+    color: #3d52eb;
+    border-radius: 3px;
+    margin-top: 100px;
+    animation: fade 1.5s;
+}
+
+.landing-inputs-wrapper p {
+    color: #666;
+    
+}
+a.btn-landing-1, a.btn-landing-2 {
+   
+        background-color: #3d52eb;
+        
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	
+	text-transform: uppercase;
+        border: none;
+        border-radius: 4px;
+        
+}
+
+.btn-landing-1:hover,
+.btn-landing-1:focus,
+.btn-landing-2:hover,
+.btn-landing-2:focus{
+        border: none;
+	color: #000;
+	transition: .2s ease-in;
+        background-color: #94b9ff;
+        text-decoration: none;
+}
+
+a.btn-landing-1 {
+    padding: 14px 84px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+a.btn-landing-2 {
+    padding: 14px 74px;
+   
+}
+@keyframes fade {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Login and register panel*/
+
+.login-view {
+    height: 100vh;
+}
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+        margin-top: 15px;
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #3d52eb;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login, .btn-register {
+	background-color: #3d52eb;
+        padding: 14px 0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	
+	text-transform: uppercase;
+        border: none;
+	
+}
+.btn-login:hover,
+.btn-login:focus,
+.btn-register:hover,
+.btn-register:focus {
+	border: none;
+	color: #000;
+	transition: .2s ease-in;
+        background-color: #94b9ff;
+}
+
+
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+/*Quiz start page*/
+
+.start p {
+    font-size: 14px;
+}
+
+.start h2 {
+    color: #3d52eb;
+    padding-bottom: 15px;
+}
+a.btn-start {
+        background-color: #3d52eb;
+        margin-top:25px;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 85px;
+	text-transform: uppercase;
+        border: none;
+}
+
+.btn-start:hover,
+.btn-start:focus {
+        border: none;
+	color: #000;
+	transition: .2s ease-in;
+        background-color: #94b9ff;
+        text-decoration: none;
+}
+
+.start-bg {
+    background-image: url("../images/start-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.start-bg h1 {
+    color: #fddc57;
+}
+
+/*Question page*/
+
+
+.current h5 {
+    color: #3d52eb;
+}
+
+
+.current fieldset span {
+    text-align: left;
+    margin-left: 80px;
+}
+p.question-text {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+[type="radio"] {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+}
+
+/* One radio button per line */
+.question-view  label {
+  display: block;
+  cursor: pointer;
+  line-height: 2;
+  font-size: 16px;;
+  font-weight: 300;
+  
+  
+}
+
+[type="radio"] + span {
+  display: block;
+}
+
+/* the basic, unchecked style */
+[type="radio"] + span:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.25em;
+  border-radius: 1em;
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 0.15em #000;
+  margin-right: 0.75em;
+  transition: 0.5s ease all;
+}
+
+/* the checked style using the :checked pseudo class */
+[type="radio"]:checked + span:before {
+  background: #3d52eb;
+  box-shadow: 0 0 0 0.25em #000;
+}
+
+
+
+.question-view fieldset {
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+
+.question-view legend {
+    font-size: 16px;
+  color: #fff;
+  background: #3d52eb;
+  padding: 0.25em 1em;
+  border-radius: 1em;
+  font-weight: 300;
+  width: 25%;
+  border-bottom: none;
+}
+
+.btn-question {
+    background-color: #3d52eb;
+        margin-top:25px;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 85px;
+	text-transform: uppercase;
+        border: none;
+
+}
+
+.btn-question:hover,
+.btn-question:focus {
+        border: none;
+	color: #000;
+	transition: .2s ease-in;
+        background-color: #94b9ff;
+}
+
+/* Code Page */
+
+#code {
+        height: 60px;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 40px;
+}
+
+/*Final page*/
+
+.final-field {
+    border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+        margin-top: 15px;
+        padding: 45px;
+}
+p.final-text {
+    font-size: 20px;
+}
+
+p.final-result {
+    font-size: 85px;
+    font-weight: 500;
+    color: #3d52eb;
+}
+
+/*Add page*/
+
+.btn-add {
+    background-color: #3d52eb;
+        margin-top:25px;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 85px;
+	text-transform: uppercase;
+        border: none;
+}
+
+.btn-add:hover,
+.btn-add:focus {
+        border: none;
+	color: #000;
+	transition: .2s ease-in;
+        background-color: #94b9ff;
+}
+
+/*Helper page*/
+
+.message-view {
+    height: 90vh;
+}
+
+/*Recover page*/
+
+.recover-view {
+    height: 90vh;
+}
+
+/*Reset page*/
+
+.reset-view {
+    height: 90vh;
+}
+
+/*Code page*/
+
+.code-view {
+    height: 90vh;
+}
+
+
+/*Footer*/
+
+.footer {
+        height: 45px;
+        background-color: #666;
+        color: #fff;
+        padding: 12px;
+
+        font-size: 12px;
+}
+
+
+
+
+
